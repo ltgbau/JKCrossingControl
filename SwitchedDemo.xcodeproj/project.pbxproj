@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06D60645141F00C200302C5A /* JKCrossingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D6063E141F00C200302C5A /* JKCrossingControl.m */; };
+		06D60646141F00C200302C5A /* JKCrossingGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D60640141F00C200302C5A /* JKCrossingGestureRecognizer.m */; };
+		06D60647141F00C200302C5A /* JKCrossingSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D60642141F00C200302C5A /* JKCrossingSwitch.m */; };
+		06D60648141F00C200302C5A /* UIView+JKCrossingGestureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D60644141F00C200302C5A /* UIView+JKCrossingGestureAdditions.m */; };
+		06D60653141F08BC00302C5A /* UIGestureRecognizer+JKCrossingGestureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D60652141F08BC00302C5A /* UIGestureRecognizer+JKCrossingGestureAdditions.m */; };
+		6282DC5113B290E700D58179 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6282DC5013B290E700D58179 /* UIKit.framework */; };
+		6282DC5313B290E700D58179 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6282DC5213B290E700D58179 /* Foundation.framework */; };
+		6282DC5513B290E700D58179 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6282DC5413B290E700D58179 /* CoreGraphics.framework */; };
+		6282DC5B13B290E700D58179 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6282DC5913B290E700D58179 /* InfoPlist.strings */; };
+		6282DC5E13B290E700D58179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DC5D13B290E700D58179 /* main.m */; };
+		6282DC6113B290E700D58179 /* switchedDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DC6013B290E700D58179 /* switchedDemoAppDelegate.m */; };
+		6282DC6413B290E700D58179 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6282DC6213B290E700D58179 /* MainWindow.xib */; };
+		6282DC6713B290E700D58179 /* switchedDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DC6613B290E700D58179 /* switchedDemoViewController.m */; };
+		6282DC6A13B290E700D58179 /* switchedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6282DC6813B290E700D58179 /* switchedViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06D6063D141F00C200302C5A /* JKCrossingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKCrossingControl.h; path = JKCrossingControl/JKCrossingControl.h; sourceTree = SOURCE_ROOT; };
+		06D6063E141F00C200302C5A /* JKCrossingControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKCrossingControl.m; path = JKCrossingControl/JKCrossingControl.m; sourceTree = SOURCE_ROOT; };
+		06D6063F141F00C200302C5A /* JKCrossingGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKCrossingGestureRecognizer.h; path = JKCrossingControl/JKCrossingGestureRecognizer.h; sourceTree = SOURCE_ROOT; };
+		06D60640141F00C200302C5A /* JKCrossingGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKCrossingGestureRecognizer.m; path = JKCrossingControl/JKCrossingGestureRecognizer.m; sourceTree = SOURCE_ROOT; };
+		06D60641141F00C200302C5A /* JKCrossingSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKCrossingSwitch.h; path = JKCrossingControl/JKCrossingSwitch.h; sourceTree = SOURCE_ROOT; };
+		06D60642141F00C200302C5A /* JKCrossingSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKCrossingSwitch.m; path = JKCrossingControl/JKCrossingSwitch.m; sourceTree = SOURCE_ROOT; };
+		06D60643141F00C200302C5A /* UIView+JKCrossingGestureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+JKCrossingGestureAdditions.h"; path = "JKCrossingControl/UIView+JKCrossingGestureAdditions.h"; sourceTree = SOURCE_ROOT; };
+		06D60644141F00C200302C5A /* UIView+JKCrossingGestureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+JKCrossingGestureAdditions.m"; path = "JKCrossingControl/UIView+JKCrossingGestureAdditions.m"; sourceTree = SOURCE_ROOT; };
+		06D60651141F08BC00302C5A /* UIGestureRecognizer+JKCrossingGestureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+JKCrossingGestureAdditions.h"; path = "JKCrossingControl/UIGestureRecognizer+JKCrossingGestureAdditions.h"; sourceTree = SOURCE_ROOT; };
+		06D60652141F08BC00302C5A /* UIGestureRecognizer+JKCrossingGestureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+JKCrossingGestureAdditions.m"; path = "JKCrossingControl/UIGestureRecognizer+JKCrossingGestureAdditions.m"; sourceTree = SOURCE_ROOT; };
+		6282DC4C13B290E700D58179 /* SwitchedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitchedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6282DC5013B290E700D58179 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6282DC5213B290E700D58179 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6282DC5413B290E700D58179 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6282DC5813B290E700D58179 /* SwitchedDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwitchedDemo-Info.plist"; sourceTree = "<group>"; };
+		6282DC5A13B290E700D58179 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6282DC5C13B290E700D58179 /* SwitchedDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwitchedDemo-Prefix.pch"; sourceTree = "<group>"; };
+		6282DC5D13B290E700D58179 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6282DC5F13B290E700D58179 /* switchedDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = switchedDemoAppDelegate.h; sourceTree = "<group>"; };
+		6282DC6013B290E700D58179 /* switchedDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = switchedDemoAppDelegate.m; sourceTree = "<group>"; };
+		6282DC6313B290E700D58179 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		6282DC6513B290E700D58179 /* switchedDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = switchedDemoViewController.h; sourceTree = "<group>"; };
+		6282DC6613B290E700D58179 /* switchedDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = switchedDemoViewController.m; sourceTree = "<group>"; };
+		6282DC6913B290E700D58179 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/switchedViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6282DC4913B290E700D58179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6282DC5113B290E700D58179 /* UIKit.framework in Frameworks */,
+				6282DC5313B290E700D58179 /* Foundation.framework in Frameworks */,
+				6282DC5513B290E700D58179 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06D60630141EFC9800302C5A /* JKCrossingControl */ = {
+			isa = PBXGroup;
+			children = (
+				06D6063D141F00C200302C5A /* JKCrossingControl.h */,
+				06D6063E141F00C200302C5A /* JKCrossingControl.m */,
+				06D6063F141F00C200302C5A /* JKCrossingGestureRecognizer.h */,
+				06D60640141F00C200302C5A /* JKCrossingGestureRecognizer.m */,
+				06D60641141F00C200302C5A /* JKCrossingSwitch.h */,
+				06D60642141F00C200302C5A /* JKCrossingSwitch.m */,
+				06D60643141F00C200302C5A /* UIView+JKCrossingGestureAdditions.h */,
+				06D60644141F00C200302C5A /* UIView+JKCrossingGestureAdditions.m */,
+				06D60651141F08BC00302C5A /* UIGestureRecognizer+JKCrossingGestureAdditions.h */,
+				06D60652141F08BC00302C5A /* UIGestureRecognizer+JKCrossingGestureAdditions.m */,
+			);
+			name = JKCrossingControl;
+			path = switched/JKCrossingControl;
+			sourceTree = "<group>";
+		};
+		6282DC4113B290E700D58179 = {
+			isa = PBXGroup;
+			children = (
+				06D60630141EFC9800302C5A /* JKCrossingControl */,
+				6282DC5613B290E700D58179 /* SwitchedDemo */,
+				6282DC4F13B290E700D58179 /* Frameworks */,
+				6282DC4D13B290E700D58179 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6282DC4D13B290E700D58179 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6282DC4C13B290E700D58179 /* SwitchedDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6282DC4F13B290E700D58179 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6282DC5013B290E700D58179 /* UIKit.framework */,
+				6282DC5213B290E700D58179 /* Foundation.framework */,
+				6282DC5413B290E700D58179 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6282DC5613B290E700D58179 /* SwitchedDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6282DC5F13B290E700D58179 /* switchedDemoAppDelegate.h */,
+				6282DC6013B290E700D58179 /* switchedDemoAppDelegate.m */,
+				6282DC6213B290E700D58179 /* MainWindow.xib */,
+				6282DC6513B290E700D58179 /* switchedDemoViewController.h */,
+				6282DC6613B290E700D58179 /* switchedDemoViewController.m */,
+				6282DC6813B290E700D58179 /* switchedViewController.xib */,
+				6282DC5713B290E700D58179 /* Supporting Files */,
+			);
+			name = SwitchedDemo;
+			path = switched;
+			sourceTree = "<group>";
+		};
+		6282DC5713B290E700D58179 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6282DC5813B290E700D58179 /* SwitchedDemo-Info.plist */,
+				6282DC5913B290E700D58179 /* InfoPlist.strings */,
+				6282DC5C13B290E700D58179 /* SwitchedDemo-Prefix.pch */,
+				6282DC5D13B290E700D58179 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6282DC4B13B290E700D58179 /* SwitchedDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6282DC6D13B290E700D58179 /* Build configuration list for PBXNativeTarget "SwitchedDemo" */;
+			buildPhases = (
+				6282DC4813B290E700D58179 /* Sources */,
+				6282DC4913B290E700D58179 /* Frameworks */,
+				6282DC4A13B290E700D58179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwitchedDemo;
+			productName = switched;
+			productReference = 6282DC4C13B290E700D58179 /* SwitchedDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6282DC4313B290E700D58179 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 6282DC4613B290E700D58179 /* Build configuration list for PBXProject "SwitchedDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6282DC4113B290E700D58179;
+			productRefGroup = 6282DC4D13B290E700D58179 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6282DC4B13B290E700D58179 /* SwitchedDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6282DC4A13B290E700D58179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6282DC5B13B290E700D58179 /* InfoPlist.strings in Resources */,
+				6282DC6413B290E700D58179 /* MainWindow.xib in Resources */,
+				6282DC6A13B290E700D58179 /* switchedViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6282DC4813B290E700D58179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6282DC5E13B290E700D58179 /* main.m in Sources */,
+				6282DC6113B290E700D58179 /* switchedDemoAppDelegate.m in Sources */,
+				6282DC6713B290E700D58179 /* switchedDemoViewController.m in Sources */,
+				06D60645141F00C200302C5A /* JKCrossingControl.m in Sources */,
+				06D60646141F00C200302C5A /* JKCrossingGestureRecognizer.m in Sources */,
+				06D60647141F00C200302C5A /* JKCrossingSwitch.m in Sources */,
+				06D60648141F00C200302C5A /* UIView+JKCrossingGestureAdditions.m in Sources */,
+				06D60653141F08BC00302C5A /* UIGestureRecognizer+JKCrossingGestureAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6282DC5913B290E700D58179 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6282DC5A13B290E700D58179 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6282DC6213B290E700D58179 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6282DC6313B290E700D58179 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		6282DC6813B290E700D58179 /* switchedViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6282DC6913B290E700D58179 /* en */,
+			);
+			name = switchedViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6282DC6B13B290E700D58179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6282DC6C13B290E700D58179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		6282DC6E13B290E700D58179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "switched/SwitchedDemo-Prefix.pch";
+				INFOPLIST_FILE = "switched/SwitchedDemo-Info.plist";
+				PRODUCT_NAME = SwitchedDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6282DC6F13B290E700D58179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "switched/SwitchedDemo-Prefix.pch";
+				INFOPLIST_FILE = "switched/SwitchedDemo-Info.plist";
+				PRODUCT_NAME = SwitchedDemo;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6282DC4613B290E700D58179 /* Build configuration list for PBXProject "SwitchedDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6282DC6B13B290E700D58179 /* Debug */,
+				6282DC6C13B290E700D58179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6282DC6D13B290E700D58179 /* Build configuration list for PBXNativeTarget "SwitchedDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6282DC6E13B290E700D58179 /* Debug */,
+				6282DC6F13B290E700D58179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6282DC4313B290E700D58179 /* Project object */;
+}
