@@ -1,5 +1,5 @@
 //
-//  UIView+CrossingAdditions.m
+//  UIView+JKCrossingGestureAdditions.m
 //  JKCrossingControl
 //
 //  Created by Justin Kaufman on 6/25/11.
@@ -9,7 +9,7 @@
 #import "UIView+JKCrossingGestureAdditions.h"
 
 
-@implementation UIView (JKCrossingAdditions)
+@implementation UIView (JKCrossingGestureAdditions)
 
 - (UIView *)topmostContainingView {
     // Walk up view hierarchy until encountering the top-most view that isn't a UIWindow instance.
