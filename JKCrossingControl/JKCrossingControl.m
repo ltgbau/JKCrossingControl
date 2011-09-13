@@ -39,7 +39,7 @@
 
 - (void)configureRecognizer {
     // Subclasses may override this method but must call [super configureRecognizer] before performing their own customizations.
-    self.crossingRecognizer = [[JKCrossingGestureRecognizer alloc] initWithTarget:self action:@selector(crossedRegion:)];
+    self.crossingRecognizer = [[[JKCrossingGestureRecognizer alloc] initWithTarget:self action:@selector(crossedRegion:)] autorelease];
 
     // NOTE: All readwrite properties of JKCrossingGestureRecognizer may be modified with the exception of crossingRegion. Subclasses
     // that wish to grow or shrink the recognition region should set |crossingRegionInset|. This must be done within |-configureRecognizer|.
