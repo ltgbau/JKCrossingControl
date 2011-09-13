@@ -12,6 +12,10 @@
 
 @interface JKCrossingControl : UIControl {
 
+@private
+    JKCrossingGestureRecognizer *_crossingRecognizer;
+    CGSize _crossingRegionInset;
+
 }
 
 @end

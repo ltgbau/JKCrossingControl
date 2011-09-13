@@ -26,14 +26,15 @@
 @synthesize minimumCrossingDistance;
 @synthesize maximumInactiveInteral;
 
-@synthesize location;
-@synthesize velocity;
-@synthesize direction;
+@synthesize location = _location;
+@synthesize velocity = _velocity;
+@synthesize direction = _direction;
 
 const CGFloat kDefaultMinimumCrossingGestureDistance = 25;
 const NSTimeInterval kDefaultMaximumInactiveInterval = 0.5;
 
-#pragma mark - Lifecylce
+#pragma mark - Lifecycle
+
 - (id)initWithTarget:(id)target action:(SEL)action {
     if ((self = [super initWithTarget:target action:action])) {
         self.minimumCrossingDistance = kDefaultMinimumCrossingGestureDistance;

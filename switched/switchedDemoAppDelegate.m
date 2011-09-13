@@ -7,15 +7,12 @@
 //
 
 #import "switchedDemoAppDelegate.h"
-
 #import "switchedDemoViewController.h"
 
 @implementation switchedDemoAppDelegate
 
-
-@synthesize window=_window;
-
-@synthesize viewController=_viewController;
+@synthesize window = _window;
+@synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

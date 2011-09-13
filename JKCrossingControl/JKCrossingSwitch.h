@@ -12,6 +12,9 @@
 
 @interface JKCrossingSwitch : UISwitch {
 
+@private
+    JKCrossingGestureRecognizer *_crossingRecognizer;
+    
 }
 
 @property (nonatomic, retain, readonly) JKCrossingGestureRecognizer *crossingRecognizer;

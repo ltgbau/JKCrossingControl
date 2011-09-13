@@ -26,6 +26,11 @@ typedef enum {
     BOOL              _traversed;       // Whether the tracked passed through the crossing region.
     NSTimeInterval    _lastTouchTime;   // Used to calculate drag velocity.
     CGFloat           _dragDistance;    // Accumulated drag distances. Must exceed a minimum value for the gesture to begin.
+    
+@private
+    CGPoint _location;
+    CGFloat _velocity;
+    JKCrossingGestureRecognizerDirection _direction;    
 }
 
 // Gesture recognizer customization.

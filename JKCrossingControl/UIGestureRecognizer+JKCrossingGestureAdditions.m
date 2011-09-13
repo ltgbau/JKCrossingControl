@@ -11,7 +11,6 @@
 
 @implementation UIGestureRecognizer (JKCrossingGestureAdditions)
 
-
 - (NSString *)stringFromState {
     NSString *stateString = @"Unknown";
     switch (self.state) {

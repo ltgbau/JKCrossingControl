@@ -13,7 +13,7 @@
 
 @implementation switchedDemoViewController
 
-@synthesize testSwitch;
+@synthesize testSwitch = _testSwitch;
 
 - (void)dealloc
 {
@@ -70,7 +70,7 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    
+
     self.testSwitch = nil;
 }
 

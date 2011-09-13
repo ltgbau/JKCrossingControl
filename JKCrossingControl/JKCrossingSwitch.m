@@ -18,7 +18,7 @@
 
 @implementation JKCrossingSwitch
 
-@synthesize crossingRecognizer;
+@synthesize crossingRecognizer = _crossingRecognizer;
 
 - (void)willMoveToWindow:(UIWindow *)newWindow {
     // Remove current gesture recognizer.
@@ -50,7 +50,7 @@
 }
 
 - (void)dealloc {
-    [crossingRecognizer release];
+    [_crossingRecognizer release];
     [super dealloc];
 }
 

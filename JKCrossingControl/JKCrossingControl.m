@@ -14,14 +14,15 @@
 
 @property (nonatomic, retain) JKCrossingGestureRecognizer *crossingRecognizer;
 @property (nonatomic, assign) CGSize crossingRegionInset;
+
 - (void)configureRecognizer;
 
 @end
 
 @implementation JKCrossingControl
 
-@synthesize crossingRecognizer;
-@synthesize crossingRegionInset;
+@synthesize crossingRecognizer = _crossingRecognizer;
+@synthesize crossingRegionInset = _crossingRegionInset;
 
 - (id)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
@@ -53,7 +54,7 @@
     // Reparent gesture recognizer.
     UIView *topmostView = [self topmostContainingView];
     [topmostView addGestureRecognizer:self.crossingRecognizer];
-    self.crossingRecognizer.crossingRegion = [topmostView convertRect:CGRectInset(self.frame, crossingRegionInset.width, crossingRegionInset.height) fromView:self.superview];
+    self.crossingRecognizer.crossingRegion = [topmostView convertRect:CGRectInset(self.frame, self.crossingRegionInset.width, self.crossingRegionInset.height) fromView:self.superview];
 }
 
 - (void)crossedRegion:(JKCrossingGestureRecognizer *)recognizer {
@@ -67,11 +68,11 @@
     //   location
     //     First available: began
     //     Description: The location of the candidate touch within this control's frame.
-    //     Example use: A switch may use location update the position of its nub during the drag.
+    //     Example use: A switch may use location to update the position of its nub during the drag.
     //   velocity 
     //     First available: changed
     //     Description: Instantaneous gesture velocity in px/s, calculated using the last two touch events.
-    //     Example use: A switch may use this speed, or several eadings, to animate the dragging or flicking of its nub.
+    //     Example use: A switch may use this speed, or several readings, to animate the dragging or flicking of its nub.
     //   direction
     //     First available: ended
     //     Description: The gesture's observed heading (left/up/right/down).
@@ -79,7 +80,7 @@
 }
 
 - (void)dealloc {
-    [crossingRecognizer release];
+    [_crossingRecognizer release];
     [super dealloc];
 }
 

@@ -11,6 +11,7 @@
 @class JKCrossingSwitch;
 
 @interface switchedDemoViewController : UIViewController {
+    JKCrossingSwitch *_testSwitch;
     UIView *_testView;
     BOOL _testBool;
 }
