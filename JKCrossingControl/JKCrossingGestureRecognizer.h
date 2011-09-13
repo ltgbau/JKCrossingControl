@@ -21,13 +21,20 @@ typedef enum {
 } JKCrossingGestureRecognizerDirection;
 
 @interface JKCrossingGestureRecognizer : UIGestureRecognizer {
-    UITouch           *_touch;          // The touch tracked by this gesture recognizer.
-    CGPoint           _anchorPoint;     // Location of first touch. This could be outside of the crossing region.
-    BOOL              _traversed;       // Whether the tracked passed through the crossing region.
-    NSTimeInterval    _lastTouchTime;   // Used to calculate drag velocity.
-    CGFloat           _dragDistance;    // Accumulated drag distances. Must exceed a minimum value for the gesture to begin.
+    UITouch *_touch;                    // The touch tracked by this gesture recognizer.
+    CGPoint _anchorPoint;               // Location of first touch. This could be outside of the crossing region.
+    BOOL _traversed;                    // Whether the tracked passed through the crossing region.
+    NSTimeInterval _lastTouchTime;      // Used to calculate drag velocity.
+    CGFloat _dragDistance;              // Accumulated drag distances. Must exceed a minimum value for the gesture to begin.
     
 @private
+
+    CGRect _crossingRegion;
+    BOOL _canStartWithinCrossingRegion;
+    JKCrossingGestureRecognizerDirection _recognizedDirections;
+    CGFloat _minimumCrossingDistance;
+    NSTimeInterval _maximumInactiveInterval;;
+
     CGPoint _location;
     CGFloat _velocity;
     JKCrossingGestureRecognizerDirection _direction;    
@@ -38,7 +45,7 @@ typedef enum {
 @property (nonatomic, assign) BOOL canStartWithinCrossingRegion;                            // Whether it is acceptable for the initial touch to be within the crossing region.
 @property (nonatomic, assign) JKCrossingGestureRecognizerDirection recognizedDirections;    // Acceptable directions for gesture.
 @property (nonatomic, assign) CGFloat minimumCrossingDistance;                              // Distance that the touch must track within the given region before it is recognized.
-@property (nonatomic, assign) NSTimeInterval maximumInactiveInteral;                        // Maximum period of inactivity before the gesture is rejected.
+@property (nonatomic, assign) NSTimeInterval maximumInactiveInterval;                        // Maximum period of inactivity before the gesture is rejected.
 
 // Gesture recognizer state.
 @property (nonatomic, readonly) CGPoint location;                                           // Location of drag within the crossing region, measured from origin (top-left).

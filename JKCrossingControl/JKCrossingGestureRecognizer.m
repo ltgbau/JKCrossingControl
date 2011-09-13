@@ -20,11 +20,11 @@
 
 @implementation JKCrossingGestureRecognizer
 
-@synthesize crossingRegion;
-@synthesize canStartWithinCrossingRegion;
-@synthesize recognizedDirections;
-@synthesize minimumCrossingDistance;
-@synthesize maximumInactiveInteral;
+@synthesize crossingRegion = _crossingRegion;
+@synthesize canStartWithinCrossingRegion = _canStartWithinCrossingRegion;
+@synthesize recognizedDirections = _recognizedDirections;
+@synthesize minimumCrossingDistance = _minimumCrossingDistance;
+@synthesize maximumInactiveInterval = _maximumInactiveInterval;
 
 @synthesize location = _location;
 @synthesize velocity = _velocity;
@@ -38,7 +38,7 @@ const NSTimeInterval kDefaultMaximumInactiveInterval = 0.5;
 - (id)initWithTarget:(id)target action:(SEL)action {
     if ((self = [super initWithTarget:target action:action])) {
         self.minimumCrossingDistance = kDefaultMinimumCrossingGestureDistance;
-        self.maximumInactiveInteral = kDefaultMaximumInactiveInterval;
+        self.maximumInactiveInterval = kDefaultMaximumInactiveInterval;
         self.crossingRegion = CGRectZero;
     }
     return self;
@@ -157,7 +157,7 @@ JKCrossingGestureRecognizerDirection directionOfDrag(CGPoint first, CGPoint seco
     // Fail on linger.
     NSTimeInterval delta = event.timestamp - _lastTouchTime;
     _lastTouchTime = event.timestamp;
-    if (delta > self.maximumInactiveInteral) {
+    if (delta > self.maximumInactiveInterval) {
         self.state = UIGestureRecognizerStateFailed;
         return;
     }
