@@ -42,7 +42,7 @@
         // Switching on requires a drag to the right, off a drag to the left.
         if ((self.on && recognizer.direction == JKCrossingGestureRecognizerDirectionLeft) ||
             (self.on == NO && recognizer.direction == JKCrossingGestureRecognizerDirectionRight)) {
-                // Change state and  thenexplicitly send the action, since |-setOn| is documented to not.
+                // Change state and then explicitly send the action, since |-setOn| is documented to not.
                 [self setOn:!self.on animated:YES];
                 [self sendActionsForControlEvents:UIControlEventValueChanged];
         }

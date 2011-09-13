@@ -36,7 +36,7 @@
 {
     [super viewDidLoad];
     
-    [[self view] setBackgroundColor:[UIColor blueColor]];
+    [[self view] setBackgroundColor:[UIColor lightGrayColor]];
     
     // Add test view.
     _testView = [[UIView alloc] initWithFrame:CGRectMake(100,100,100,100)];
