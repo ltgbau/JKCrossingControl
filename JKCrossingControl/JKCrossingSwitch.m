@@ -37,9 +37,7 @@
     [[self topmostContainingView] addGestureRecognizer:self.crossingRecognizer];
 }
 
-- (void)crossedRegion:(JKCrossingGestureRecognizer *)recognizer {
-    NSLog(@"%@", self);
-    
+- (void)crossedRegion:(JKCrossingGestureRecognizer *)recognizer {    
     if (recognizer.state == UIGestureRecognizerStateEnded) {
         // Switching on requires a drag to the right, off a drag to the left.
         if ((self.on && recognizer.direction == JKCrossingGestureRecognizerDirectionLeft) ||
